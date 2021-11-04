@@ -14,9 +14,11 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_activity);
         UiModeManager uiManager = (UiModeManager) getSystemService(Context.UI_MODE_SERVICE);
+        SettingsFragment frag = new SettingsFragment();
+        frag.setUiManager(uiManager);
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.settings, new SettingsFragment(uiManager))
+                .replace(R.id.settings, frag)
                 .commit();
 
     }

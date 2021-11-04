@@ -6,6 +6,6 @@
 
         <SwitchPreferenceCompat
             app:title="Night mode"
-            app:key="nightMode"/>
+            app:key="nightMode" />
     </PreferenceCategory>
 </PreferenceScreen>

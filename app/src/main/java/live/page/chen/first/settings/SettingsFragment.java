@@ -25,7 +25,6 @@ public class SettingsFragment extends PreferenceFragmentCompat {
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.settings_application, rootKey);
         UiModeManager uiManager = (UiModeManager) getContext().getSystemService(Context.UI_MODE_SERVICE);
-
         SwitchPreferenceCompat darkmode = findPreference("nightMode");
         darkmode.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
@@ -37,10 +36,6 @@ public class SettingsFragment extends PreferenceFragmentCompat {
                 return true;
             }
         });
-
-    }
-
-    private void testPrefs() {
 
     }
 

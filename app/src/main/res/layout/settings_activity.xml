@@ -7,16 +7,7 @@
     <FrameLayout
         android:id="@+id/settings"
         android:layout_width="418dp"
-        android:layout_height="match_parent" >
-
-        <Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            android:title="Settings"
-            
-            android:titleTextColor="@color/white" />
-    </FrameLayout>
+        android:layout_height="match_parent" />
 
 
 </LinearLayout>

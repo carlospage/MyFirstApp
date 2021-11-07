@@ -1,5 +1,6 @@
 package live.page.chen.first;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.UiModeManager;
 import android.content.Context;
@@ -13,6 +14,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceManager;
 
@@ -33,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        ImageButton SettingButton = findViewById(R.id.SettingsButton);
         FloatingActionButton bouton = findViewById(R.id.fab);
 
         bouton.setOnClickListener(new View.OnClickListener() {
@@ -43,13 +44,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         bouton.hide();
-        SettingButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
     private void isNight() {
@@ -69,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.action_settings:

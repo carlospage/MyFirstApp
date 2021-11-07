@@ -17,13 +17,4 @@
         android:layout_marginBottom="16dp"
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
-    <ImageButton
-        android:id="@+id/SettingsButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#AAA"
-        android:minHeight="48dp"
-        android:src="@drawable/baseline_settings_20"
-        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
 </LinearLayout>
